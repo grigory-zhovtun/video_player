@@ -5,17 +5,32 @@ body {
 }
 
 .video_player {
+    display: block;
     background-color: #000;
-}
-
-#player {
     width: 800px;
     height: 600px;
     margin: 0;
     padding: 0;
 }
 
+#player {
+    display: block;
+    width: 800px;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+.button_wrapper {
+    background: black;
+}
+
 button {
     border: none;
     cursor: pointer;
+    background-color: transparent;
+}
+
+#play i {
+    color: #fff;
 }
