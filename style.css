@@ -4,9 +4,11 @@ body {
     text-align: left;
 }
 
-.js-video-container {
+.player-wrapper {
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+
 }
 
 .video-player {
