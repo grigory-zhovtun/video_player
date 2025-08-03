@@ -21,16 +21,23 @@ body {
     padding: 0;
 }
 
-.button_wrapper {
+.buttons_wrapper {
+    display: grid;
+    grid-template-columns: 15px 15px;
+    /*grid-template-rows: 1fr 1fr 1fr;*/
+    grid-gap: 10px;
     background: black;
 }
 
-button {
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
+.player_controls {
+    height: 30px;
+    width: 30px;
 }
 
-#play i {
-    color: #fff;
+button {
+    text-align: center;
+    border: none;
+    /*border: 1px solid #fff;*/
+    cursor: pointer;
+    background-color: transparent;
 }
