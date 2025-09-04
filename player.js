@@ -8,6 +8,7 @@ function createPlayer({
         hideOverlay: true,
         hideMainUI: true,
     });
+
     const playerContainer = document.getElementById(elementId)
 
     if (!playerContainer){
