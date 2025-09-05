@@ -38,6 +38,12 @@ body {
     align-items: center;
 }
 
+.player-controls-spacer {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+
 button {
     text-align: center;
     border: none;
