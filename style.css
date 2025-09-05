@@ -37,6 +37,7 @@ body {
 button {
     text-align: center;
     border: none;
+    font-size: 19px;
     /*border: 1px solid #fff;*/
     cursor: pointer;
     background-color: transparent;
