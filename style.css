@@ -45,7 +45,7 @@ body {
 }
 
 
-button {
+.btn {
     text-align: center;
     border: none;
     font-size: 19px;
@@ -59,17 +59,17 @@ button {
     transition: background-color 0.15s ease, outline-color 0.15s ease;
 
 }
-button:hover {
+.btn:hover {
     background-color: rgba(255, 255, 255, 0.10);
 }
-button:active {
+.btn:active {
     background-color: rgba(255, 255, 255, 0.16);
 }
-button:focus-visible {
+.btn:focus-visible {
     outline: 2px solid rgba(255, 255, 255, 0.35);
     outline-offset: 2px;
 }
 
-button > i {
+.btn > .btn-icon {
     color: #fff;
 }
