@@ -71,3 +71,7 @@ body {
 .btn > .btn-icon {
     color: #fff;
 }
+
+.time > span {
+    color: #fff;
+}
