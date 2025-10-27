@@ -1,3 +1,11 @@
+:root {
+  --player-bg: #000;
+  --control-bg: rgba(255, 255, 255, 0.10);
+  --accent-color: #f8104d;
+  --text-color: #fff;
+  --progress-bg: #474747;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,7 +22,6 @@ body {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 4 / 3;
-    height: 600px;
     margin: 10px auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 }
@@ -69,6 +76,9 @@ body {
     outline: 2px solid rgba(255, 255, 255, 0.35);
     outline-offset: 2px;
 }
+.btn:focus:not(:focus-visible) {
+    outline: none;
+}
 
 .btn > .btn-icon {
     color: #fff;
@@ -115,4 +125,22 @@ body {
 
 .player-controls .progress:hover .pointer-progress-slider {
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    #player {
+        max-width: 100%;
+        margin: 0;
+    }
+    .btn {
+        min-width: 30px;
+        min-height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (hover: none) {
+    .pointer-progress-slider {
+        opacity: 1; /* Всегда видим на touch-устройствах */
+    }
 }
