@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Градиент для глубины -->
+  <defs>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF8C42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E85C2F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9944;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="200" height="200" fill="#FFFFFF"/>
+  
+  <!-- Основной круг для кинопленки -->
+  <circle cx="100" cy="100" r="85" fill="url(#orangeGradient)" filter="url(#shadow)"/>
+  
+  <!-- Декоративные отверстия кинопленки сверху -->
+  <circle cx="50" cy="50" r="6" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="100" cy="40" r="6" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="150" cy="50" r="6" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Декоративные отверстия кинопленки снизу -->
+  <circle cx="50" cy="150" r="6" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="100" cy="160" r="6" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="150" cy="150" r="6" fill="#FFFFFF" opacity="0.9"/>
+  
+  <!-- Декоративные отверстия кинопленки слева -->
+  <circle cx="40" cy="85" r="5" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="40" cy="115" r="5" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Декоративные отверстия кинопленки справа -->
+  <circle cx="160" cy="85" r="5" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="160" cy="115" r="5" fill="#FFFFFF" opacity="0.8"/>
+  
+  <!-- Центральный круг для кнопки Play -->
+  <circle cx="100" cy="100" r="50" fill="url(#lightGradient)" filter="url(#shadow)"/>
+  
+  <!-- Кнопка Play (треугольник) -->
+  <polygon points="80,75 80,125 130,100" fill="#FFFFFF" opacity="0.95"/>
+  
+  <!-- Блик для придания объема -->
+  <ellipse cx="85" cy="70" rx="15" ry="8" fill="#FFFFFF" opacity="0.25"/>
+  
+  <!-- Маленькие звездочки для веселости -->
+  <g fill="#FF6B1A" opacity="0.7">
+    <!-- Звездочка слева-вверху -->
+    <polygon points="35,30 37,37 45,37 39,42 41,50 35,45 29,50 31,42 25,37 33,37"/>
+    <!-- Звездочка справа-вверху -->
+    <polygon points="165,35 167,42 175,42 169,47 171,55 165,50 159,55 161,47 155,42 163,42"/>
+    <!-- Звездочка слева-внизу -->
+    <polygon points="30,165 32,172 40,172 34,177 36,185 30,180 24,185 26,177 20,172 28,172"/>
+    <!-- Звездочка справа-внизу -->
+    <polygon points="170,160 172,167 180,167 174,172 176,180 170,175 164,180 166,172 160,167 168,167"/>
+  </g>
+</svg>
